@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styles CSS</title>
+    <link rel="stylesheet" href="../styles/03.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Основні властивості CSS для роботи з текстом</h1>
+    <ul>
+        <li><a href="#1">Властивість font-size</a></li>
+        <li><a href="#2">Властивість font-weight</a></li>
+        <li><a href="#3">Властивість font-style</a></li>
+        <li><a href="#4">Властивість font-family</a></li>
+        <li><a href="#5">Властивість color</a></li>
+        <li><a href="#6">Властивість text-transform</a></li>
+        <li><a href="#7">Властивість text-decoration</a></li>
+    </ul>
+    <h2 id="1">Властивість font-size</h2>
+    <p>Властивість <span>font-size</span> змінює розмір шрифта.</p> 
+    <p>Розмір шрифту задається за допомогою значення та одиниць виміру (<span>em</span>, <span>px</span>, <span>pt</span>, <span>%</span>)</p>
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div> 
+        <code>p{<br></code>
+        <code class="retreat">font-size: 20px;<br></code>
+        <code>}</code>
+    </div>
+    <h4>HTML</h4>
+    <div>
+        <code>&ltp&gtHello, world!&lt/p&gt</code>
+    </div>
+    <h3>Результат</h3>
+    <div>
+        <p class="result1">Hello, world!</p>
+    </div> 
+    <h2 id="2">Властивість font-weight</h2>
+    <p>Властивість <span>font-weight</span> встановлює насиченість шрифту.</p> 
+    <p>Може приймати наступні значення: </p>
+    <ul>
+        <li><span>normal</span> - нормальна насиченість, те саме, що і <span></span>400</li>
+        <li><span>bold</span> - напівжирний текст, те саме, що і <span></span>700</li>
+        <li><span>lighter</span> - змінює насиченість відносно батьківського стилю в меншу сторону</li>
+        <li><span>bolder</span> - змінює насиченість відносно батьківського стилю в більшу сторону</li>
+        <li><span>100</span>, <span>200</span>, <span>300</span>, <span>400</span>, <span>500</span>, <span>600</span>,
+            <span>700</span>, <span>800</span>, <span>900</span> - цифрові значення насиченості, які відрізняються від стандартних
+        </li>
+    </ul>
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div>
+        <code>.bold{<br></code>
+        <code class="retreat">font-weight: bold;<br></code>
+        <code>}<br></code>
+        <code>.thin{<br></code>
+        <code class="retreat">font-weight: 100;<br></code>
+        <code>}<br></code> 
+        <code>.max{<br></code>
+        <code class="retreat">font-weight: 900;<br></code>
+        <code>}</code>       
+    </div>
+    <h4>HTML</h4>
+    <div>
+        <code>&ltp&gt<br></code>
+        <code class="retreat">&ltspan class = "bold"&gtНапівжирний текст&lt/span&gt<br></code>
+        <code class="retreat">&ltspan class = "thin"&gtнайтонший текст&lt/span&gt<br></code>
+        <code class="retreat">&ltspan class = "max"&gtнайтовщий текст&lt/span&gt<br></code>
+        <code>&lt/p&gt</code>
+    </div>
+    <h3>Результат</h3>
+    <div>
+        <span class="bold">Напівжирний текст</span>,
+        <span class="thin">найтонший текст</span>,
+        <span class="max">найтовщий текст</span>
+    </div>
+    <h2 id="3">Властивість font-style</h2>
+    <p>Властивість <span>font-style</span> визначає накреслення шрифту - звичайне, курсивне або похиле.</p>
+    <p>Може приймати наступні значення: </p>
+    <ul>
+    <li><span>normal</span> - звичайне зображення тексту</li>
+    <li><span>italic</span> - курсивне зображення</li>
+    <li><span>oblique</span> - похиле накреслення. Курсив і похилий шрифт при всій їхній схожості не одне й те саме. Курсив це 
+        спеціальний шрифт, що імітує рукописний, а похилий утворюється шляхом нахилу звичайних знаків вправо
+    </li>
+    </ul>              
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div>
+        <code>.italic{<br></code>
+        <code class="retreat">font-style: italic;<br></code>
+        <code>}</code>  
+    </div>     
+    <h4>HTML</h4>
+    <div>
+        <code>&ltspan class = "italic"&gtТекст курсивом&lt/span&gt</code> 
+    </div> 
+    <h3>Результат</h3> 
+    <div>
+        <p class="italic">Текст курсивом</p>
+    </div> 
+     <h2 id="4">Властивість font-family</h2>
+     <p>
+        Властивість <span>font-family</span> встановлює сімейство шрифту, яке використовуватиметься для оформлення текстового вмісту. Список 
+        шрифтів може містити одну або кілька назв, розділених комою.
+    </p>
+    <p>Може приймати наступні значення: </p>
+    <ul>
+        <li><span>serif</span> - шрифти із засічками (антиквенні), типу Times;</li>
+        <li><span>sans-serif</span> - рубані шрифти (шрифти без засічок чи гротески), типовий представник Arial;</li>
+        <li><span>cursive</span>  - курсивні шрифти;</li>
+        <li><span>fantasy</span>  - декоративні шрифти;</li>
+        <li><span>monospace</span> - моноширинні шрифти, ширина кожного символу у такому сімействі однакова (шрифт Courier).</li>
+    </ul> 
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div>
+        <code>.serif{<br></code>
+        <code class="retreat">font-family: serif;<br></code>
+        <code>}</code>  
+    </div>            
+    <h4>HTML</h4>
+    <div>
+        <code>&ltspan class = "serif"&gtШрифт типу Times&lt/span&gt</code> 
+    </div>  
+    <h3>Результат</h3> 
+    <div>
+        <p class="serif">Шрифт типу Times</p>
+    </div>       
+    <h2 id="5">Властивість color</h2>
+    <p>Властивість <span>color</span> визначає колір тексту елемента.</p>
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div>
+        <code>div{<br></code>
+        <code class="retreat">color: #29438e;<br></code>
+        <code>}</code>  
+    </div>         
+    <h4>HTML</h4>
+    <div>
+        <code>&ltdiv&gtКолір тексту&lt/div&gt</code> 
+    </div> 
+    <h3>Результат</h3>
+    <div>
+        <p class="color">Колір тексту</p>
+    </div> 
+    <h2 id="6">Властивість text-transform</h2>
+    <p>
+        Властивість <span>text-transform</span> керує перетворенням тексту елемента у великі або великі символи. Коли значення відрізняється 
+        від none, регістр вихідного тексту буде змінено.
+    </p>
+    <p>Може приймати наступні значення: </p>
+    <ul>
+        <li><span>capitalize</span> - перший символ кожного слова у реченні буде великим. Інші символи свого вигляду не змінюють.</li>
+        <li><span>lowercase</span> - всі символи тексту стають малими (нижній регістр).</li>
+        <li><span>uppercase</span> - всі символи тексту стають великими (верхній регістр).</li>
+        <li><span>none</span> - не змінює регістр символів.</li>
+    </ul>
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>   
+    <div>
+        <code>div{<br></code>
+        <code class="retreat">text-transform: none;<br></code>
+        <code>}</code>  
+    </div>         
+    <h4>HTML</h4>
+    <div>
+        <code>&ltdiv&gtТекст великими або маленькими літерами&lt/div&gt</code> 
+    </div> 
+    <h3>Результат</h3> 
+    <div>
+        <p class="lowercase">Текст великими або маленькими літерами</p>
+    </div>
+    <h2 id="7">Властивість text-decoration</h2>
+    <p>
+        Властивість <span>text-decoration</span> додає оформлення тексту як його підкреслення, перекреслення чи лінії над текстом. Одночасно 
+        можна застосувати більше одного стилю, перераховуючи значення через пропуск.
+    </p>
+    <p>Може приймати наступні значення: </p>
+    <ul>
+        <li><span>line-through</span> - створює перекреслений текст.</li>
+        <li><span>overline</span> - лінія проходить над текстом.</li>
+        <li><span>underline</span> - встановлює підкреслений текст.</li>
+        <li><span>none</span> - скасовує всі ефекти, у тому числі й підкреслення у посилань, яке задано за замовчуванням.</li>
+    </ul>
+    <h3>Синтаксис</h3>
+    <h4>CSS</h4>
+    <div>
+        <code>div{<br></code>
+        <code class="retreat">text-decoration: none;<br></code>
+        <code>}</code>  
+    </div>  
+    <h4>HTML</h4>
+    <div>
+        <code>&ltdiv&gtТекст&lt/div&gt</code> 
+    </div> 
+    <h3>Результат</h3> 
+    <div>
+        <p class="line-through">Перекреслений текст</p>
+    </div>       
+</body>
+</html>

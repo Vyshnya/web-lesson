@@ -1,0 +1,104 @@
+*{
+    font-family: Roboto;
+}
+
+h1{
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3{
+    color: #000;
+    font-weight: bold;
+}
+
+h4{
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.retreat{
+    padding-left: 12px;
+}
+
+div{
+    width: 600px;
+    padding: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+p, li{
+    color: #666;
+    font-size: 14px;
+}
+
+span{
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.result1{
+    font-size: 20px;
+}
+
+.bold{
+    color: #666;
+    background-color: lightgray;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.thin{
+    color: #666;
+    background-color: lightgray;
+    font-weight: 100;
+    border-radius: 5px;
+}   
+
+.max{
+    color: #666;
+    background-color: lightgray;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.serif{
+    font-family: serif;
+}
+
+.color{
+    color: #29438e;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
