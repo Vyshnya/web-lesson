@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokc elements 1</title>
+    <style>
+        div{
+            display: block;
+            width: 400px;
+            height: 40px;
+            margin: 30px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .firstblock{
+            border-top-style: dotted;
+            border-top-color: green;
+            border-left-style: double;
+            border-left-color: bisque;
+            border-right-style: solid;
+            border-right-color: blue;
+            border-bottom-style: dashed;
+            border-bottom-color: red;
+            border-width: 8px 10px 4px 4px;
+            text-align: justify;
+            line-height: 10px;
+        }
+
+        .secondblock{
+            border-bottom-style: solid;
+            border-bottom-color: red;
+            border-width: 2px;
+            text-align: center;
+        }
+
+        .thirdblock{
+            border-left-style: solid;
+            border-left-color: rgb(20, 156, 247);
+            border-left-width: 10px;
+            background-color: rgb(218, 247, 252);
+            text-align: justify;
+            line-height: 20px;
+        }
+
+        .fourthblock{
+            border-style: solid;
+            border-color: rgb(221, 221, 221);
+            border-width: 2px;
+            text-align: justify;
+            border-radius: 10px;
+            line-height: 15px;
+            box-shadow: 10px 12px 30px -9px rgba(105,101,101,0.71);
+            -webkit-box-shadow: 10px 12px 30px -9px rgba(105,101,101,0.71);
+            -moz-box-shadow: 10px 12px 30px -9px rgba(105,101,101,0.71);
+        }
+
+        .fourthblock:hover{
+            background-color: rgb(51, 170, 240);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstblock">
+        Перший блок
+    </div>
+    <div class="secondblock">
+        Другий блок
+    </div>
+    <div class="thirdblock">
+        Третій блок
+    </div>
+    <div class="fourthblock">
+        Четвертий блок
+    </div>
+</body>
+</html>
