@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Fredoka+One & family= Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700;1,900 & display= замінити');
+
+        *{
+            font-style: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: rgb(248, 65, 71);
+        }
+
+        .heart:hover, .basket:hover, .button_balance:hover{
+            background-color: rgb(248, 243, 235);
+        }
+
+        .card{
+            display: inline-block;
+            padding: 16px;
+            max-width: 360px;
+            box-sizing: border-box;
+            width: 241px;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+            border-right: 1px solid #e9e9e9;
+        }
+
+        header{
+            display: inline-block;
+        }
+
+        .discount{
+            color: rgb(255, 255, 255);
+            background-color: rgb(248, 65, 71);
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 12px;
+            line-height: 24px;
+            top: 12px;
+            box-sizing: border-box;
+        }
+
+        .first_line{
+            display: flex;
+            justify-content: space-between;
+            height: 24px;
+        }
+
+        .balance{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .photo_frame{
+            width: 209px;
+            height: 170px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            text-justify: center;
+            position: relative;
+        }
+
+        .photo{
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .name{
+            display: block;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+            line-height: 20px;
+            height: 40px;
+        }
+
+        .response{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .message{
+            margin: 0 4px 0 0;
+        }
+
+        .feedback{
+            color: #3e77aa;
+        }
+
+        .old_price{
+            position: relative;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 1;
+            text-decoration: line-through;
+            color: #a6a5a5;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        .price{
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .new_price{
+            font-size: 24px;
+            color: #f84147;
+        }
+
+        .currency{
+            font-size: 15px;
+        }
+
+        .basket{
+            width: 26px;
+            height: 26px;
+        }
+
+        .availability_goods{
+            margin-bottom: 4px;
+            font-size: 12px;
+            margin-top: 0;
+            color: #00a046;
+        }
+
+        .product_ends{
+            margin-bottom: 4px;
+            font-size: 12px;
+            margin-top: 0;
+            color: #ff5c00;
+        }
+
+        .not_available{
+            margin-bottom: 4px;
+            font-size: 12px;
+            margin-top: 0;
+            color: #797878;
+        }
+
+        .top_sales{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 169, 0);
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 12px;
+            line-height: 24px;
+            top: 12px;
+            box-sizing: border-box;
+        }
+
+        .without_shares{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0 32px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <ul>
+                <div class="card">
+                        <header>
+                            <div class="photo_frame">
+                                <div class="first_line"><span class="discount">-8%</span><a href="https://rozetka.com.ua/ua/103482492/p103482492/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://rozetka.com.ua/ua/103482492/p103482492/"><img class="photo" src="img/firstimg.jpg" alt="Коробка"></a></div>
+                                <div class="balance"><a href="https://rozetka.com.ua/ua/comparison/c4629431/ids=103482492/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://rozetka.com.ua/ua/103482492/p103482492/">Новорічний подарунок з пастилою "Compliment BOX S1"</a></div>
+                            <div class="response">
+                                <a href="https://rozetka.com.ua/ua/292727028/p292727028/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://rozetka.com.ua/ua/292727028/p292727028/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">320 &#8372</p>
+                            <p class="price"><span class="new_price">295 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="availability_goods">Є в наявності</p>
+                        </footer>
+                </div>
+                <div class="card">
+                    <li>
+                        <header>
+                            <div class="photo_frame">
+                                <div class="first_line"><span class="discount">Акція</span><a href="https://hard.rozetka.com.ua/ua/acer-umhv2ees01/p316212364/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://hard.rozetka.com.ua/ua/acer-umhv2ees01/p316212364/"><img class="photo" src="img/secondimg.jpg" alt="Монітор"></a></div>
+                                <div class="balance"><a href="https://hard.rozetka.com.ua/ua/comparison/c80089/ids=316212364/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://hard.rozetka.com.ua/ua/acer-umhv2ees01/p316212364/">Монітор 27" Acer Nitro VG272UVbmiipx</a></div>
+                            <div class="response">
+                                <a href="https://hard.rozetka.com.ua/ua/acer-umhv2ees01/p316212364/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://hard.rozetka.com.ua/ua/acer-umhv2ees01/p316212364/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">8 888 &#8372</p>
+                            <p class="price"><span class="new_price">7 999 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="product_ends">Закінчується</p>
+                        </footer>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <header>
+                            <div class="photo_frame">
+                                <div class="first_line"><span class="top_sales">Топ продаж</span><a href="https://rozetka.com.ua/ua/fortune_cookies_4820135530038/p117942055/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://rozetka.com.ua/ua/fortune_cookies_4820135530038/p117942055/"><img class="photo" src="img/thirdimg.jpg" alt="Печиво"></a></div>
+                                <div class="balance"><a href="https://rozetka.com.ua/ua/comparison/c4629445/ids=117942055/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://rozetka.com.ua/ua/fortune_cookies_4820135530038/p117942055/">Печиво Fortune Cookies з передбаченнями 12 шт х 7 г</a></div>
+                            <div class="response">
+                                <a href="https://rozetka.com.ua/ua/fortune_cookies_4820135530038/p117942055/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://rozetka.com.ua/ua/fortune_cookies_4820135530038/p117942055/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">75 &#8372</p>
+                            <p class="price"><span class="new_price">65 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="availability_goods">Є в наявності</p>
+                        </footer>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <header>
+                            <div class="photo_frame">
+                                <div class="without_shares"></span><a href="https://rozetka.com.ua/ua/lovare_4820198877231/p258940561/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://rozetka.com.ua/ua/lovare_4820198877231/p258940561/"><img class="photo" src="img/fourthimg.jpg" alt="Чашка"></a></div>
+                                <div class="balance"><a href="https://rozetka.com.ua/ua/comparison/c4625004/ids=258940561/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://rozetka.com.ua/ua/lovare_4820198877231/p258940561/">Подарунковий набір чаю Lovare в пірамідках</a></div>
+                            <div class="response">
+                                <a href="https://rozetka.com.ua/ua/lovare_4820198877231/p258940561/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://rozetka.com.ua/ua/lovare_4820198877231/p258940561/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">250 &#8372</p>
+                            <p class="price"><span class="new_price">149 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="not_available">Немає в наявності</p>
+                        </footer>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <header>
+                            <div class="photo_frame">
+                                <div class="first_line"><span class="top_sales">-55%</span><a href="https://rozetka.com.ua/ua/la-roche-posay-5902503760205/p324286489/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://rozetka.com.ua/ua/la-roche-posay-5902503760205/p324286489/"><img class="photo" src="img/fifthimg.jpg" alt="Набір"></a></div>
+                                <div class="balance"><a href="https://rozetka.com.ua/ua/comparison/c4657328/ids=324286489/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://rozetka.com.ua/ua/la-roche-posay-5902503760205/p324286489/">Набір засобів мініформату La Roche-Posay</a></div>
+                            <div class="response">
+                                <a href="https://rozetka.com.ua/ua/la-roche-posay-5902503760205/p324286489/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://rozetka.com.ua/ua/la-roche-posay-5902503760205/p324286489/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">769 &#8372</p>
+                            <p class="price"><span class="new_price">349 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="availability_goods">Є в наявності</p>
+                        </footer>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <header>
+                            <div class="photo_frame">
+                                <div class="first_line"><span class="discount">Акція</span><a href="https://rozetka.com.ua/ua/trevisana_4820207313606/p327452002/"><img class="heart" src="img/id=DxIsF9smUsRE-format=png.png" alt="Серце"></a></div>
+                                <div><a href="https://rozetka.com.ua/ua/trevisana_4820207313606/p327452002/"><img class="photo" src="img/siximg.jpg" alt="Монітор"></a></div>
+                                <div class="balance"><a href="https://rozetka.com.ua/ua/comparison/c4649058/ids=327452002/"><img class="button_balance" src="img/id=86472-format=png.png" alt="Ваги"></a></div>
+                            </div>
+                        </header>
+                        <main>
+                            <div><a class="name" href="https://rozetka.com.ua/ua/trevisana_4820207313606/p327452002/">Набір «Новорічне <br> диво»</a></div>
+                            <div class="response">
+                                <a href="https://rozetka.com.ua/ua/trevisana_4820207313606/p327452002/comments/"><img class="message" src="img/id=143-format=png.png" alt="Повідомлення"></a>
+                                <a class="feedback" href="https://rozetka.com.ua/ua/trevisana_4820207313606/p327452002/comments/">Залишити відгук</a>
+                            </div>
+                            <p class="old_price">500 &#8372</p>
+                            <p class="price"><span class="new_price">460 <span class="currency">&#8372</span></span><a href="https://rozetka.com.ua/ua/checkout/"><img class="basket" src="img/icons8-shopping-cart-32.png" alt="Візок"></a></p> 
+                        </main>
+                        <footer>
+                            <p class="product_ends">Закінчується</p>
+                        </footer>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
