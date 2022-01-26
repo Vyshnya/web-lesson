@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+        *{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        form{
+            background-color: #24313b;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 600px;
+            height: 500px;
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+        }
+
+        .header{
+            display: flex;
+        }
+
+        .batton_sign_up{
+            display: flex;
+            width: 270px;
+            height: 50px;
+            background-color: #1ab188;
+            justify-content: center;
+        }
+
+        .batton_sign_up:hover{
+            -webkit-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            -moz-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+        }
+
+        .batton_login_in{
+            display: flex;
+            width: 270px;
+            height: 50px;
+            background-color: #435059;
+            justify-content: center;
+            color: #81888e;
+        }
+
+        .batton_login_in:hover{
+            background-color: #1ab188;
+            color: white;
+            -webkit-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            -moz-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+        }
+
+        .button_started{
+            display: flex;
+            width: 540px;
+            height: 70px;
+            background-color: #1ab188;
+            justify-content: center;
+            color: white;
+            line-height: 70px;
+            text-transform: uppercase;
+            border: none;
+            font-size: 25px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .button_started:hover{
+            -webkit-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            -moz-box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+            box-shadow: 7px 7px 23px 1px rgba(255, 255, 255, 0.66);
+        }
+
+        h2{
+            color: white;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        input{
+            width: 265px;
+            height: 30px;
+            border: 1px solid #81888e;
+            background-color: #24313b;
+            padding-left: 10px;
+            color: white;
+            color: #81888e;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .name_field{
+            margin-right: 10px;
+        }
+
+        .field_email{
+            width: 540px;
+            height: 30px;
+            border: 1px solid #81888e;
+            background-color: #24313b;
+            box-sizing: border-box;
+        }
+
+        .field_password{
+            width: 540px;
+            height: 30px;
+            border: 1px solid #81888e;
+            background-color: #24313b;
+            box-sizing: border-box;
+        }
+
+        .name_field:invalid + div{
+            display: inline;
+            color: #1ab188;
+            position: absolute;
+            margin-left: 90px;
+            margin-top: 5px;   
+        }
+
+        .name_field + .first{
+            display: none;
+        }
+
+        .surname_field:invalid + div{
+            display: inline;
+            color: #1ab188;
+            position: absolute;
+            margin-left: 360px;
+            margin-top: 5px;   
+        }
+
+        .surname_field + div{
+            display: none;
+        }
+
+        .field_email:invalid + div{
+            display: inline;
+            color: #1ab188;
+            position: absolute;
+            margin-left: -430px;
+            margin-top: 5px;   
+        }
+
+        .field_email + div{
+            display: none;
+        }
+
+        .field_password:invalid + div{
+            display: inline;
+            color: #1ab188;
+            position: absolute;
+            margin-left: -420px;
+            margin-top: 5px;   
+        }
+
+        .field_password + div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="header">
+            <a href="#"><div class="batton_sign_up">Sign Up</div></a>
+            <a href="#"><div class="batton_login_in">Login In</div></a>
+        </div>
+        <h2>Sing Up for Free</h2>
+        <div class="header">
+            <input class="name_field" type="text" name="first_name" id="name" placeholder="First Name" required="1">
+            <div>*</div>
+            <input class="surname_field" type="text" name="surname" id="surname" placeholder="Last Name" required="1">
+            <div>*</div>
+        </div>
+        <div>
+            <input class="field_email" type="email" name="email" id="email" placeholder="Email Address" required="1">
+            <div>*</div>
+        </div>
+        <div>
+            <input class="field_password" type="password" name="password" id="password" placeholder="Set A Password" required="1">
+            <div>*</div>
+        </div>
+        <button class="button_started" name="send" id="send">Get started</button>
+    </form>
+</body>
+</html>

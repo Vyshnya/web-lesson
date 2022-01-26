@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета відвідувача ресторану</title>
+    <style>
+        h1{
+            color: #7b4a3d;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 25px;
+        }
+
+        form{
+            margin-left: 50px;
+        }
+
+        fieldset{
+            width: 60%;
+            height: auto;
+            border: solid 2px #9dc6cc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-right: 150px;
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #e2fafd;
+            margin: 15px;
+        }
+
+        legend{
+            font-variant: small-caps;
+            color: #17c9cc;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .content_first_and_second_blocks{
+            display: flex;
+            justify-content: space-between;
+            color: #ad8789;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        input, select{
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            width: 300px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        .content_third_block{
+            color: #ad8789;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .text{
+            color: #000;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .test{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>Анкета відвідувача ресторану</h1>
+        <fieldset>
+            <legend>Контакти</legend>
+            <div class="content_first_and_second_blocks">
+                <label for="name">Ім'я</label><input type="text" name="first_name" id="name">
+            </div>
+            <div class="content_first_and_second_blocks">
+                <label for="tel">Телефон</label><input type="tel" name="tel" id="tel">
+            </div>
+            <div class="content_first_and_second_blocks">
+                <label for="email">Email</label><input type="email" name="email" id="email">
+            </div>
+            <div class="content_first_and_second_blocks">
+                <label for="date">Дата відвідування</label><input type="date" name="date" id="date">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Персональна інформація</legend>
+            <div class="content_first_and_second_blocks">
+                <label for="age">Вік</label><input type="number" min="1" max="120" temp="1" name="age" id="age">
+            </div>
+            <div class="content_first_and_second_blocks">
+                <label for="name">Улюблена кухня</label>
+                <select name="dishes" id="dishes">
+                    <option value="1" selected>Італійська</option>
+                    <option value="2">Українська</option>
+                    <option value="3">Китайська</option>
+                    <option value="4">Французька</option>
+                    <option value="5">Японська</option>
+                </select>
+            </div>
+            <div  class="content_first_and_second_blocks">
+                <label for="name">Які страви ви хотіли би бачити в нашому мeню?</label>
+                <textarea name="wish" id="wish" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Оцінка ресторану</legend>
+            <div class="content_third_block">
+                <label for="first_test">Як ви дізналися про наш ресторан?</label>
+                <div class="text"><input class="test" type="radio" name="information" value="1">Поруч з будинком/роботою</div>
+                <div class="text"><input class="test" type="radio" name="information" value="2">Реклама</div>
+                <div class="text"><input class="test" type="radio" name="information" value="3">Порадили знайомі</div>
+                <div class="text"><input class="test" type="radio" name="information" value="4">Пошук в мережі інтернет</div>
+                <div class="text"><input class="test" type="radio" name="information" value="5">Інше</div>
+            </div>
+            <div class="content_third_block">
+                <label for="first_test">Чи будете ви рекомендувати наш ресторан знайомим?</label>
+                <div class="text"><input class="test" type="radio" name="information" value="1" checked>Так</div>
+                <div class="text"><input class="test" type="radio" name="information" value="2">Ні</div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
