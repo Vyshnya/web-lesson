@@ -10,6 +10,7 @@ let count = prompt("Введіть кількість команд, яку хо�
 for (let i = 0; i < count; i++) {
     let str = prompt("Введіть назву команди та її очки через пропуск: ");
     currentTeam = str.split(" ");
+    currentTeam[1] = parseInt(currentTeam[1]);
     let team = createTeam(currentTeam[0], currentTeam[1]);
     teamList.push(team);
 }
@@ -35,7 +36,7 @@ startRow.appendChild(heading_3);
 thead.appendChild(startRow);
 
 let max = teamList[0].points;
-let indexMax;
+let indexMax = 0;
 
 for (let i = 0; i < count; i++) {
     let row = document.createElement('tr');
@@ -46,10 +47,10 @@ for (let i = 0; i < count; i++) {
     let rowPointsTeam = document.createElement('td');
     rowPointsTeam.innerHTML = teamList[i].points;
 
-    if (max < teamList[i].points) {
+    if (teamList[i].points > max) {
         max = teamList[i].points;
         indexMax = i;
-    }
+    }  
 
     row.appendChild(rowNumberTeam);
     row.appendChild(rowNameTeam);
@@ -57,7 +58,7 @@ for (let i = 0; i < count; i++) {
     tbody.appendChild(row);
 }
 
-document.write(`<br>Команда ${teamList[indexMax].name} зайняла 1-ше місце отримавши ${teamList[indexMax].points} очок`);
+document.write(`Команда ${teamList[indexMax].name} зайняла 1-ше місце отримавши ${teamList[indexMax].points} очок!`);
 
 
 
